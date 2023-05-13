@@ -10,5 +10,6 @@
           -echo Build completed successfully
         artifacts:
           files:
+            -**/*
             -target/order-service.jar
           discard-paths: yes
