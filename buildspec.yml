@@ -4,8 +4,8 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-    commands:
-      - pip install
+    
+    
   build:
     commands:
       - echo Entered the build phase...
