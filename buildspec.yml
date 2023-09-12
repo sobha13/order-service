@@ -4,13 +4,10 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-    
-    
   build:
     commands:
       - echo Entered the build phase...
-      - mvn install
-      - mvn test
+      - mvn clean package
   post_build:
     commands:
       - echo Build completed successfully
