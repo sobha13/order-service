@@ -6,8 +6,11 @@ phases:
       java: corretto11
   build:
     commands:
-      - echo Entered the build phase...
-      - mvn clean package
+      - echo Build started on `date`
+      - mvn test
+      - mvn package
+      - echo Build completed on `date`
+      - dir target
   post_build:
     commands:
       - echo Build completed successfully
