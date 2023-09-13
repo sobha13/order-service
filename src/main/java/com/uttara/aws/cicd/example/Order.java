@@ -28,7 +28,7 @@ public class Order implements Serializable {
 		this.quantity = quantity;
 		this.price = price;
 	}
-
+    
 	private int id;
 	private String name;
 	private int quantity;
